@@ -29,7 +29,7 @@ EMAIL_PASSWORD = config("email_password")
 EMAIL_RECEIVER = config("email_receiver")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["9energysolar.azurewebsites.net", "9energysolar.in", "9energysolar.com", "127.0.0.1"]
 
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
