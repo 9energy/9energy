@@ -1,0 +1,235 @@
+{% extends 'home/basic.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+
+{% block css %}{%endblock%}
+
+
+
+{% block body%}
+<!-- Services -->
+<div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s"
+    style="background-image:url(images/overlay/brilliant.png);">
+    <div class="container">
+        <div class="section-head text-black text-center">
+            <h2 class="title">WHY CHOOSE US</h2>
+            <p>In the world of competitive markets, renewable and sustainable facultative power supplies, Solar energy
+                is free for the taking from the natural resources.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="img-carousel-dots owl-theme owl-dots-none owl-carousel owl-btn-center-lr owl-btn-3">
+                    <div class="item">
+                        <div class="service-box style4">
+                            <div class="icon-lg m-b5 text-primary radius">
+                                <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-worker"></i></a>
+                            </div>
+                            <h3 class="title">Solar Panels</h3>
+                            <div class="no">1</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-box style4">
+                            <div class="icon-lg m-b5 text-primary radius">
+                                <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-factory"></i></a>
+                            </div>
+                            <h3 class="title">Wind Turbines</h3>
+                            <div class="no">2</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-box style4">
+                            <div class="icon-lg m-b5 text-primary radius">
+                                <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-settings"></i></a>
+                            </div>
+                            <h3 class="title">Maintenance</h3>
+                            <div class="no">3</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-box style4">
+                            <div class="icon-lg m-b5 text-primary radius">
+                                <a href="javascript:void(0);" class="icon-cell"><i class="flaticon-engineer-1"></i></a>
+                            </div>
+                            <h3 class="title">Monitoring</h3>
+                            <div class="no">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+<div class="section-full bg-img-fix content-inner-2 overlay-black-dark contact-action style2">
+    <div class="container">
+        <div class="row relative">
+            <div class="col-md-12 col-lg-8 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                <div class="contact-no-area">
+                    <h2 class="title">A company involved in service, maintenance</h2>
+                    <div class="contact-no">
+                        <div class="contact-left">
+                            <h3 class="no"><i class="sl-call-in"></i>1800-112454</h3>
+                        </div>
+                        <div class="contact-right">
+                            <a href="{%url 'contactus'%}" class="site-button appointment-btn btnhover13">Get
+                                Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 contact-img-bx wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
+                <img src="{%static 'images/home/pic1.png'%}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section-full content-inner-2 bg-gray wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+    <div class="container">
+        <div class="section-head text-black text-center">
+            <h2 class="title">Our Products</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the
+                industry's standard dummy text ever since the been when an unknown printer.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="img-carousel-dots-nav owl-theme owl-dots-none owl-carousel owl-btn-center-lr owl-btn-3">
+
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/BATTERY%20LESS%20SOLAR%20INVERTER%201%20KVA"><img src="{%static 'images/gallery/pic1.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/BATTERY%20LESS%20SOLAR%20INVERTER%201%20KVA">BATTERY LESS SOLAR INVERTER 1
+                                        KVA</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/LEAD%20ACID%20TALL%20TUBULAR%20BATTERY"><img src="{%static 'images/gallery/pic6.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/LEAD%20ACID%20TALL%20TUBULAR%20BATTERY">LEAD ACID TALL TUBULAR BATTERY
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/MPPT%20SOLAR%20PCU%201KVA-12V"><img src="{%static 'images/gallery/pic11.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/MPPT%20SOLAR%20PCU%201KVA-12V">MPPT SOLAR PCU 1KVA-12V
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/MPPT%20SOLAR%20PCU%205KVA-48-96V"><img src="{%static 'images/gallery/pic16.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/MPPT%20SOLAR%20PCU%205KVA-48-96V">MPPT SOLAR PCU 5KVA-48-96V
+                                    </a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/PWM%20SOLAR%20PCU%203KVA-48V"><img src="{%static 'images/gallery/pic21.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/PWM%20SOLAR%20PCU%203KVA-48V">PWM SOLAR PCU 3KVA-48V
+                                    </a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/PWM%20SOLAR%20PCU%202515-24V"><img src="{%static 'images/gallery/pic26.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/PWM%20SOLAR%20PCU%202515-24V">PWM SOLAR PCU 2515-24V
+                                    </a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/PWM%20SOLAR%20PCU%201215-12V"><img src="{%static 'images/gallery/pic31.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/PWM%20SOLAR%20PCU%201215-12V">PWM SOLAR PCU 1215-12V
+                                    </a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/MPPT%20125O"><img src="{%static 'images/gallery/pic36.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/MPPT%20125O">MPPT 125O
+                                    </a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="dlab-box project-bx">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                <a href="/product/LFP%20MPPT%20125O"><img src="{%static 'images/gallery/pic37.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h5 class="dlab-title"><a href="/product/LFP%20MPPT%20125O">LFP MPPT 125O
+                                    </a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}
+
+
+
+{% block script %}{%endblock%}

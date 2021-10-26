@@ -1,0 +1,96 @@
+{% extends 'product/basic.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+
+{% block css %}{%endblock%}
+
+
+
+{% block body%}
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="dlab-bnr-inr overlay-black-middle text-center bg-pt"
+        style="background-image:url(/static/images/banner.jpg);">
+        <div class="container">
+            <div class="dlab-bnr-inr-entry align-m text-center">
+                <h1 class="text-white">{{product}}</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <li>{{product}}</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb row END -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-full content-inner bg-white">
+        <!-- Product details -->
+        <div class="container woo-entry">
+            <div class="row m-b30">
+                <div class="col-md-5 col-lg-5 col-sm-12">
+                    <div class="product-gallery on-show-slider lightgallery" id="lightgallery">
+                        <div id="sync1" class="owl-carousel owl-theme owl-btn-center-lr m-b5 owl-btn-1 primary">
+
+                            {%for img in images%}
+                            <div class="item">
+                                <div class="mfp-gallery">
+                                    <div class="dlab-box">
+                                        <div class="dlab-thum-bx dlab-img-overlay1 ">
+                                            <img src="{{img}}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon">
+                                                    <span data-exthumbimage="{{img}}" data-src="{{img}}"
+                                                        class="check-km" title="Image 2 Title will come here">
+                                                        <i class="ti-fullscreen"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+
+                        </div>
+
+                        <div id="sync2" class="owl-carousel owl-theme owl-none">
+                            {%for img in images%}
+                            <div class="item">
+                                <div class="dlab-media">
+                                    <img src="{{img}}" alt="">
+                                </div>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7 col-lg-7 col-sm-12">
+                    <div class="dlab-post-title">
+                        <h4 class="post-title"><a href="javascript:void(0);">{{product}}</a></h4>
+                        {%for detail in details%}
+                        <p>{{detail}}</p>
+                        {%endfor%}
+                    </div>
+                    <div class="relative">
+                        <h4 class="item-price"><del>₹{{oldPrice}}</del> <span class="text-primary">₹{{newPrice}}</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product details -->
+    </div>
+</div>
+<!-- Content END-->
+
+{%endblock%}
+
+
+
+{% block script %}{%endblock%}

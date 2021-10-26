@@ -1,0 +1,108 @@
+{% extends 'about/basic.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+
+{% block css %}{%endblock%}
+
+
+
+{% block body%}
+<!-- Content -->
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="dlab-bnr-inr overlay-black-middle text-center bg-pt"
+        style="background-image:url(/static/images/banner.jpg);">
+        <div class="container">
+            <div class="dlab-bnr-inr-entry align-m text-center">
+                <h1 class="text-white">About Us</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb row END -->
+            </div>
+        </div>
+    </div>
+    <!-- inner page banner END -->
+    <!-- contact area -->
+    <div class="content-block">
+        <!-- About Services info -->
+        <div class="section-full content-inner bg-white video-section"
+            style="background-image:url('/static/images/home/bg-video.png');">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row d-flex">
+                        <div class="col-lg-6 col-md-12 m-b30 our-story-thum">
+                            <img src="{%static 'images/about/1.jpeg'%}" class="radius-sm" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
+                            <div class="content-bx1">
+                                <h2 class="m-b15 title">WE OFFER GREEN TECHNOLOGIES
+                                    <br><span class="text-primary"> ABOUT OUR FACTORY
+                                    </span></h2>
+                                <p class="m-b30">Once the battery or electronic assembly is at a point for validation, Edgewater can help customers automate a variety of advanced visual and electrical tests, including high potential (hi pot), continuity, digital low-resistance ohmmeters (DLRO), and surge protection. Our machine vision solutions can track product for inventory and front office applications to the unit level while providing the quality documentation battery and electronic manufacturers need to protect customer relationships and limit risk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Services info END -->
+        <!-- Counter -->
+        <div class="section-full content-inner overlay-black-dark bg-img-fix"
+            style="background-image:url(/static/images/slide3.jpg);">
+            <div class="container">
+                <div class="section-content text-center text-white">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                            <div class="counter-style-5">
+                                <div class="">
+                                    <span class="counter">72</span>
+                                </div>
+                                <span class="counter-text">FINISHED PROJECTS</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                            <div class="counter-style-5">
+                                <div class="">
+                                    <span class="counter">832</span>
+                                </div>
+                                <span class="counter-text">HAPPY CLIENTS</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                            <div class="counter-style-5">
+                                <div class="">
+                                    <span class="counter">550</span>
+                                </div>
+                                <span class="counter-text">SATISFY CUSTOMER</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                            <div class="counter-style-5">
+                                <div class="">
+                                    <span class="counter">1858</span>
+                                </div>
+                                <span class="counter-text">DEALER/DISTRIBUTOR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter END -->
+</div>
+<!-- Content END -->
+
+{%endblock%}
+
+
+
+{% block script %}{%endblock%}
