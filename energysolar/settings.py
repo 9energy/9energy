@@ -31,6 +31,8 @@ LOCATION_ADDRESS = config("location_address")
 LOCATION_LINK = config("location_link")
 LOCATION_EMBED = config("location_embed")
 FACEBOOK = config("facebook")
+LINKEDIN = config("linkedin")
+TWITTER = config("twitter")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False

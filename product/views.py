@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from energysolar.settings import EMAIL_RECEIVER, LOCATION_ADDRESS, LOCATION_LINK, FACEBOOK
+from energysolar.settings import EMAIL_RECEIVER, LINKEDIN, LOCATION_ADDRESS, LOCATION_LINK, FACEBOOK, TWITTER
 
 # Create your views here.
 
@@ -153,14 +153,52 @@ products = {
             "Advance pure sine wave technology",
         ]
     },
-    "MPPT 125O": {
+    "MPPT HB-12OO": {
         "img": [
             "/static/images/gallery/pic36.png",
         ],
         "oldPrice": "7724",
         "newPrice": "7000",
         "details": [
-            "99.97% - 99.99",
+            "Micro controller based compact design supported by microchip",
+            "Develops gravity faster among its pears",
+            "Zero Volt battery pickup",
+            "Intellicharge Management",
+            "Boost based multistage charging",
+            "Wide input voltage & frequency range",
+            "Multistage software & hardware protection.",
+            "Noiseless operation",
+            "Temperature management ensures reliability", 
+            "Resettable CKT breaker peace of mind", 
+            "ZCT ensure reliability",
+            "Heavy load pickup",
+            "Surge protection",
+            "Unmatched power delivery",
+            "In a Wink changeover",
+            "MPPT Solar Charge Controller Inside",
+            "PCU Features Enabled",
+        ]
+    },
+    "CURVE 1060-1260-1460": {
+        "img": [
+            "/static/images/gallery/pic39.png",
+        ],
+        "oldPrice": "7724",
+        "newPrice": "7000",
+        "details": [
+            "Micro controller based compact design supported by microchip",
+            "Develops gravity faster among its pears",
+            "Zero Volt battery pickup",
+            "Intellicharge Management-Boost based multistage charging",
+            "Wide input voltage & frequency range",
+            "Multistage software & hardware protection.",
+            "Noiseless operation Temperature management ensures reliability", 
+            "Resettable CKT breaker peace of mind", 
+            "ZCT ensure reliability",
+            "Heavy load pickup",
+            "Surge protection",
+            "Unmatched power delivery",
+            "In a Wink changeover",
         ]
     },
     "LFP MPPT 125O": {
@@ -207,6 +245,20 @@ products = {
             "T manager (Temperature manager) algorithm monitor the temperature of all critical components and protects them from any failure",
        ]
     },
+    "STREET LIGHTS": {
+        "img": [
+        ],
+        "oldPrice": "7724",
+        "newPrice": "7000",
+        "details": [
+            "Since external wires are eliminated, risk of accidents are minimized.",
+            "Electricity produced from solar panels is non-pollutive.",
+            "Solar street lights are independent of the utility grid. Hence, the operation costs are minimized.",
+            "Solar street lights require much less maintenance compared to conventional street lights.",
+            "Separate parts of a solar panel system can easily be transported.",
+            "Energy costs can be saved.",
+        ]
+    },
 }
 
 
@@ -224,6 +276,8 @@ def home(request, productName):
         "locationAddress": LOCATION_ADDRESS,
         "locationLink": LOCATION_LINK,
         "facebook": FACEBOOK,
+        "twitter": TWITTER,
+        "linkedin": LINKEDIN,
     }
     
     return render(request, "product/home.html", context)

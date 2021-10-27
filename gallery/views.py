@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from energysolar.settings import EMAIL_RECEIVER, LOCATION_LINK, LOCATION_ADDRESS, FACEBOOK
+from energysolar.settings import EMAIL_RECEIVER, LINKEDIN, LOCATION_LINK, LOCATION_ADDRESS, FACEBOOK, TWITTER
 
 # Create your views here.
 def home(request):
@@ -67,9 +67,12 @@ def home(request):
  
     context = {
         "title": "9 Energy Solar",
+        "gallery": gallery,
         "emailReceiver": EMAIL_RECEIVER,
         "locationAddress": LOCATION_ADDRESS,
         "locationLink": LOCATION_LINK,
         "facebook": FACEBOOK,
+        "linkedin": LINKEDIN,
+        "twitter": TWITTER,
     }
     return render(request, "gallery/home.html", context)
