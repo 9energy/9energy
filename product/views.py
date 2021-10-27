@@ -63,9 +63,12 @@ products = {
         "oldPrice": "14180",
         "newPrice": "13100",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "DSP based technology design ensures high reliability & rugged performance",
+            "T manager (Temperature Manager) a logo inside continuously monitor the temperature of all critical components & protects them from any failure",
+            "Inbuilt Solar MPPT based smart charger upto 50Amp",
+            "Pure Sine Wave Output (THD<3%)",
+            "User friendly interfacing duel display LED & LCD (Both)",
+            "Completely Noiseless operation",
         ]
     },
     "MPPT SOLAR PCU 5KVA-48-96V": {
@@ -79,9 +82,12 @@ products = {
         "oldPrice": "77594",
         "newPrice": "71000",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "DSP based technology design ensures high reliability & rugged performance",
+            "T manager (Temperature Manager) a logo inside continuously monitor the temperature of all critical components & protects them from any failure",
+            "Inbuilt Solar MPPT based smart charger upto 50Amp",
+            "Pure Sine Wave Output (THD<3%)",
+            "User friendly interfacing duel display LED & LCD (Both)",
+            "Completely Noiseless operation",    
         ]
     },
     "PWM SOLAR PCU 3KVA-48V": {
@@ -95,9 +101,14 @@ products = {
         "oldPrice": "30945",
         "newPrice": "28500",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "Next-GEN Solar Hybrid PCU incorporates DSP based technology",
+            "40/50 Amp built-in PWM solar charge controller",
+            "Increased battery life as solar panel produces pure DC power",
+            "Solar panel 100 W to 800 W (12V) & 200 W - 1600 W (24V)",
+            "Solar PV reverse connection protection",
+            "Multiple, Multi level inbuilt over current & over voltage protections",
+            "Multicolor user friendly interactive LCD display system",
+            "Advance pure sine wave technology",
         ]
     },
     "PWM SOLAR PCU 2515-24V": {
@@ -111,9 +122,14 @@ products = {
         "oldPrice": "20717",
         "newPrice": "18700",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "Next-GEN Solar Hybrid PCU incorporates DSP based technology",
+            "40/50 Amp built-in PWM solar charge controller",
+            "Increased battery life as solar panel produces pure DC power",
+            "Solar panel 100 W to 800 W (12V) & 200 W - 1600 W (24V)",
+            "Solar PV reverse connection protection",
+            "Multiple, Multi level inbuilt over current & over voltage protections",
+            "Multicolor user friendly interactive LCD display system",
+            "Advance pure sine wave technology",
         ]
     },
     "PWM SOLAR PCU 1215-12V": {
@@ -127,9 +143,14 @@ products = {
         "oldPrice": "7724",
         "newPrice": "7000",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "Next-GEN Solar Hybrid PCU incorporates DSP based technology",
+            "40/50 Amp built-in PWM solar charge controller",
+            "Increased battery life as solar panel produces pure DC power",
+            "Solar panel 100 W to 800 W (12V) & 200 W - 1600 W (24V)",
+            "Solar PV reverse connection protection",
+            "Multiple, Multi level inbuilt over current & over voltage protections",
+            "Multicolor user friendly interactive LCD display system",
+            "Advance pure sine wave technology",
         ]
     },
     "MPPT 125O": {

@@ -33,7 +33,7 @@ LOCATION_EMBED = config("location_embed")
 FACEBOOK = config("facebook")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["9energysolar.azurewebsites.net", "9energysolar.in", "9energysolar.com", "127.0.0.1"]
 
