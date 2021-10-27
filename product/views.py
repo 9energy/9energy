@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from energysolar.settings import EMAIL_RECEIVER, LOCATION_ADDRESS, LOCATION_LINK, FACEBOOK
+
 # Create your views here.
 
 products = {
@@ -14,9 +16,13 @@ products = {
         "oldPrice": "15215",
         "newPrice": "14200",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "No Battery Required",
+            "BLS Solar System will work on the solar as well as Grid",
+            "Precise auto thermal management and protection",
+            "Advance and reliable software to incorporate and interface",
+            "Maximum utilization of Solar energy",
+            "Cuts down grid electricity consumption", 
+            "maximum grid power saving",
         ]
     },
     "LEAD ACID TALL TUBULAR BATTERY": {
@@ -30,9 +36,20 @@ products = {
         "oldPrice": "17408",
         "newPrice": "16400",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "99.97% - 99.99% Pure lead • Full capacity/True AH output",   
+            "100% factory charged",   
+            "100% factory charged battery",   
+            "Hi-efficency grid design mode of Selenium/low Antimony alloy with grain refiners for low water loss ,least corrosion long life",   
+            "Low self discharge",   
+            "Heavy duty terminals",   
+            "Ceramic water level management system with micro porous vent plugs for least environmental pollution & less topping up",   
+            "Rugged anti-corrasive addictive-for longer battery life",   
+            "Computerized formation -for uniform quality and peak performance Container made of PP Co-polymer for strength & robustnessi",   
+            "More ribs on container for better strength • Paper less warranty",   
+            "Tubular technology Deep cycle design suitable for longer power cuts",
+            "Calcium alloy/ultra low maintenance and less topping-up",
+            "PE separator - low electrical resistence, minimal self discharging & high porosity",
+            "Cell partition welded with short electrical path for low internal resistance",
         ]
     },
     "MPPT SOLAR PCU 1KVA-12V": {
@@ -122,23 +139,53 @@ products = {
         "oldPrice": "7724",
         "newPrice": "7000",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
+            "99.97% - 99.99",
         ]
     },
     "LFP MPPT 125O": {
         "img": [
             "/static/images/gallery/pic37.png",
         ],
+        "oldPrice": "30 000",
+        "newPrice": "28000",
+        "details": [
+            "Micro-controller Based H-Bridge compact design supported by Microchip ensures high reliability & rugged performance.", 
+            "MPPT Solar Charge Controller Inside", 
+            "PCU Features Enabled ",
+            "LiFepo4 Battery bank inside ",
+            "USAN BOLT charging with completes charging time of 5-6 hours (Max.) ",
+            "Pollution free/ Environment friendly. No issue of acid fumes ( Safe for Kids & older people)",
+            "2000 complete charge discharge cycles No need to replace battery for more than 5 years",
+            "Ready to fit Portable model with handle",
+            "Dynamic controls algorithm based BMS ensure safety of lithium battery from peak current, peak voltage ripple current ripple voltage and safety for temperature rise.",
+            "RCB (Resettable ckt. breaker) peace of mind from hassles of finding fuse in case of excess load more than the capacity of the system is plugged to the system.",
+            "Complete Noiseless Operation",
+            "Exponential time-based overload protection further ensures reliability of the system.",
+        ]
+    },
+    "LFP HUPS 1250": {
+        "img": [
+            "/static/images/gallery/pic38.png",
+        ],
         "oldPrice": "7724",
         "newPrice": "7000",
         "details": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.", 
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.",    
-        ]
-    }
+            "Micro-controller Based H-Bridge compact design supported by Microchip ensures high reliability & rugged performance.",
+            "LiFepo4 Battery bank inside",
+            "USAIN BOLT charging with completes charging time of 5.15-7.30 hours (Max.)",
+            "Power saving charging, charging the battery more efficiently in less time",
+            "Pollution free/ Environment friendly",
+            "No hassles of additional Lead Acid Battery connection and periodic maintenance",
+            "2000 complete charge discharge cycles",
+            "Ready to fit Portable model with handle ",
+            "Dynamic controls algorithm based BMS ensure safety of lithium battery ",
+            "Adaptive to variable input conditions (rural and urban) wide input range 90V-295V",
+            "RCB (Resettable ckt. breaker) peace of mind ",
+            "Complete Noiseless Operation",
+            "Surge Protection-MOV inside ",
+            "T manager (Temperature manager) algorithm monitor the temperature of all critical components and protects them from any failure",
+       ]
+    },
 }
 
 
@@ -152,5 +199,10 @@ def home(request, productName):
         "details": prodData["details"],
         "oldPrice": prodData["oldPrice"],
         "newPrice": prodData["newPrice"],
+        "emailReceiver": EMAIL_RECEIVER,
+        "locationAddress": LOCATION_ADDRESS,
+        "locationLink": LOCATION_LINK,
+        "facebook": FACEBOOK,
     }
+    
     return render(request, "product/home.html", context)

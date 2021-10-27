@@ -27,9 +27,13 @@ SECRET_KEY = get_random_secret_key()
 EMAIL_ADDRESS = config("email_id")
 EMAIL_PASSWORD = config("email_password")
 EMAIL_RECEIVER = config("email_receiver")
+LOCATION_ADDRESS = config("location_address")
+LOCATION_LINK = config("location_link")
+LOCATION_EMBED = config("location_embed")
+FACEBOOK = config("facebook")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["9energysolar.azurewebsites.net", "9energysolar.in", "9energysolar.com", "127.0.0.1"]
 

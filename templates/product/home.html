@@ -74,12 +74,30 @@
                 <div class="col-md-7 col-lg-7 col-sm-12">
                     <div class="dlab-post-title">
                         <h4 class="post-title"><a href="javascript:void(0);">{{product}}</a></h4>
-                        {%for detail in details%}
-                        <p>{{detail}}</p>
-                        {%endfor%}
+                        <div class="relative">
+                            <h4 class="item-price"><del>₹{{oldPrice}}</del> <span class="text-primary">₹{{newPrice}}</span></h4>
+                        </div>
+                        <ul>
+                            {%for detail in details%}
+                            <li>{{detail}}</li>
+                            {%endfor%}
+                        </ul>
                     </div>
-                    <div class="relative">
-                        <h4 class="item-price"><del>₹{{oldPrice}}</del> <span class="text-primary">₹{{newPrice}}</span></h4>
+                </div>
+                
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <div class="widget">
+                        <div class="download-file" style="background-color: white;">
+                            <h4 class="title" style="color: black;">Product Bronchure</h4>
+                            <ul>
+                                <li>
+                                    <a href="/static/bronchure/{{product}}.pdf" download class="bg-primary">
+                                        <div class="text primary">Download</div>
+                                        <i class="fa fa-download"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

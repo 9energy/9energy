@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 import requests
 import json
 import smtplib
-from energysolar.settings import EMAIL_ADDRESS, EMAIL_PASSWORD, EMAIL_RECEIVER
+from energysolar.settings import EMAIL_ADDRESS, EMAIL_PASSWORD, EMAIL_RECEIVER, LOCATION_ADDRESS, LOCATION_EMBED, LOCATION_LINK, FACEBOOK
 
 
 # Create your views here.
@@ -37,5 +37,10 @@ def home(request):
     else:
         context = {
             "title": "9 Energy Solar",
+            "emailReceiver": EMAIL_RECEIVER,
+            "locationAddress": LOCATION_ADDRESS,
+            "locationLink": LOCATION_LINK,
+            "locationEmbed": LOCATION_EMBED,
+            "facebook": FACEBOOK,
         }
         return render(request, "contactus/home.html", context)

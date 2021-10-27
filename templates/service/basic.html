@@ -143,11 +143,14 @@
                             <div class="widget widget_getintuch">
                                 <h5 class="m-b30 text-white ">Contact us</h5>
                                 <ul>
-                                    <li><i class="ti-location-pin"></i><strong>address</strong> 207-208, Ground Floor,
-                                        Chandan Park, Street 4, Siraspur, New Delhi-110042</li>
-                                    <li><i class="ti-mobile"></i><strong>phone</strong> 1800 112 454 (24/7 Support Line)
+                                    <li><a href="{{locationLink}}" target="_blank"><i
+                                                class="ti-location-pin"></i>
+                                            <div>ADDRESS</div> {{locationAddress}} </a></li>
+                                    <li><i class="ti-mobile"></i><strong>phone</strong> 1800-11-2454 (24/7 Support Line)
                                     </li>
-                                    <li><i class="ti-email"></i><strong>email</strong>info@9energysolar.com</li>
+                                    <li><a href="mailto:{{emailReceiver}}"><i class="ti-email"></i>
+                                            <div>email</div>{{emailReceiver}}
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -185,6 +188,20 @@
             <!-- footer bottom part -->
             <div class="footer-bottom">
                 <div class="container text-center">
+                    <ul class="list-inline m-a0">
+                        <li><a href="{{facebook}}" target="_blank"
+                                class="site-button facebook circle "><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);" class="site-button google-plus circle "><i
+                                    class="fa fa-google-plus"></i></a></li>
+                        <li><a href="javascript:void(0);" class="site-button linkedin circle "><i
+                                    class="fa fa-linkedin"></i></a></li>
+                        <li><a href="javascript:void(0);" class="site-button instagram circle "><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="javascript:void(0);" class="site-button twitter circle "><i
+                                    class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="container text-center mt-3">
                     <span>Copyright © 2022-23 | Created By <a
                             href="https://www.linkedin.com/in/prince-mishra-7379101ab/" target="_blank"> Prince
                             Mishra</a></span>
