@@ -42,10 +42,10 @@
                                 <div class="mfp-gallery">
                                     <div class="dlab-box">
                                         <div class="dlab-thum-bx dlab-img-overlay1 ">
-                                            <img src="{{img}}" alt="">
+                                            <img src="/{{img}}" alt="">
                                             <div class="overlay-bx">
                                                 <div class="overlay-icon">
-                                                    <span data-exthumbimage="{{img}}" data-src="{{img}}"
+                                                    <span data-exthumbimage="/{{img}}" data-src="/{{img}}"
                                                         class="check-km" title="Image 2 Title will come here">
                                                         <i class="ti-fullscreen"></i>
                                                     </span>
@@ -63,7 +63,7 @@
                             {%for img in images%}
                             <div class="item">
                                 <div class="dlab-media">
-                                    <img src="{{img}}" alt="">
+                                    <img src="/{{img}}" alt="">
                                 </div>
                             </div>
                             {%endfor%}
@@ -77,7 +77,7 @@
                         <div class="relative">
                             <h4 class="item-price"><del>₹{{oldPrice}}</del> <span class="text-primary">₹{{newPrice}}</span></h4>
                         </div>
-                        <ul>
+                        <ul style="padding: 20px;">
                             {%for detail in details%}
                             <li>{{detail}}</li>
                             {%endfor%}

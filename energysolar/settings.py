@@ -35,7 +35,7 @@ LINKEDIN = config("linkedin")
 TWITTER = config("twitter")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["9energysolar.azurewebsites.net", "9energysolar.in", "9energysolar.com", "127.0.0.1"]
 

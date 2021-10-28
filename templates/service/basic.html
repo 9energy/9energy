@@ -58,7 +58,7 @@
                     <div class="container clearfix">
                         <!-- website logo -->
                         <div class="logo-header mostion logo-white">
-                            <a href="{%url 'home'%}"><img src="{%static '/images/logo.png'%}" alt=""></a>
+                            <a href="{%url 'home'%}"><img src="{%static '/images/logo-white.png'%}" alt=""></a>
                         </div>
                         <!-- nav toggle button -->
                         <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
@@ -72,7 +72,7 @@
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                             <div class="logo-header d-md-block d-lg-none">
-                                <a href="{%url 'home'%}"><img src="{%static '/images/logo.png'%}" alt=""></a>
+                                <a href="{%url 'home'%}"><img src="{%static '/images/logo-black.png'%}" alt=""></a>
                             </div>
                             <ul class="nav navbar-nav">
 
@@ -80,19 +80,7 @@
                                 <li> <a href="{%url 'about'%}">About Us</a></li>
                                 <li>
                                     <a href="javascript:void(0);">Products<i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu right" style="max-height: 250px; overflow-y: scroll;">
-                                        <li> <a href="/product/BATTERY LESS SOLAR INVERTER 1 KVA">BATTERY LESS SOLAR INVERTER 1 KVA</a></li>
-                                        <li> <a href="/product/LEAD ACID TALL TUBULAR BATTERY">LEAD ACID TALL TUBULAR BATTERY</a></li>
-                                        <li> <a href="/product/MPPT SOLAR PCU 1KVA-12V">MPPT SOLAR PCU 1KVA-12V</a></li>
-                                        <li> <a href="/product/MPPT SOLAR PCU 5KVA-48-96V">MPPT SOLAR PCU 5KVA-48-96V</a></li>
-                                        <li> <a href="/product/PWM SOLAR PCU 3KVA-48V">PWM SOLAR PCU 3KVA-48V</a></li>
-                                        <li> <a href="/product/PWM SOLAR PCU 2515-24V">PWM SOLAR PCU 2515-24V</a></li>
-                                        <li> <a href="/product/PWM SOLAR PCU 1215-12V">PWM SOLAR PCU 1215-12V</a></li>
-                                        <li> <a href="/product/MPPT HB-12OO">MPPT HB-12OO</a></li>
-                                        <li> <a href="/product/CURVE 1060-1260-1460">CURVE 1060-1260-1460</a></li>
-                                        <li> <a href="/product/LFP MPPT 125O">LFP MPPT 125O</a></li>
-                                        <li> <a href="/product/LFP HUPS 1250">LFP HUPS 1250</a></li>
-                                        <li> <a href="/product/STREET LIGHTS">STREET LIGHTS</a></li>
+                                    <ul class="sub-menu right" style="max-height: 250px; overflow-y: scroll;" id="productMenu">
                                     </ul>
                                 </li>
                                 <li> <a href="{%url 'service'%}">Service</a></li>
@@ -157,31 +145,7 @@
                         <div class="col-md-12 col-xl-4 col-lg-4 col-sm-6 footer-col-4 ">
                             <div class="widget widget_gallery gallery-grid-4">
                                 <h5 class="m-b30 text-white">Gallery</h5>
-                                <ul>
-                                    <li class="img-effect2"> <a
-                                            href="/product/BATTERY%20LESS%20SOLAR%20INVERTER%201%20KVA"><img
-                                                src="{%static 'images/gallery/pic1.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a
-                                            href="/product/LEAD%20ACID%20TALL%20TUBULAR%20BATTERY"><img
-                                                src="{%static 'images/gallery/pic6.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/MPPT%20SOLAR%20PCU%201KVA-12V"><img
-                                                src="{%static 'images/gallery/pic11.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/MPPT%20SOLAR%20PCU%205KVA-48-96V"><img
-                                                src="{%static 'images/gallery/pic16.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/PWM%20SOLAR%20PCU%203KVA-48V"><img
-                                                src="{%static 'images/gallery/pic21.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/PWM%20SOLAR%20PCU%202515-24V"><img
-                                                src="{%static 'images/gallery/pic26.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/PWM%20SOLAR%20PCU%201215-12V"><img
-                                                src="{%static 'images/gallery/pic31.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/CURVE%201060-1260-1460"><img
-                                                src="{%static 'images/gallery/pic39.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/MPPT%20HB-12OO"><img
-                                                src="{%static 'images/gallery/pic36.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/LFP%20HUPS%201250"><img
-                                                src="{%static 'images/gallery/pic38.png'%}" alt=""></a> </li>
-                                    <li class="img-effect2"> <a href="/product/LFP%20MPPT%20125O"><img
-                                                src="{%static 'images/gallery/pic37.png'%}" alt=""></a> </li>
+                                <ul id="footerGallery">
                                 </ul>
                             </div>
 
@@ -257,10 +221,46 @@
     <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
     <script src="{%static 'js/rev.slider.js' %}"></script>
     <script>
+        function allProducts(url) {
+            $.post(url, {
+                    csrfmiddlewaretoken: '{{csrf_token}}',
+                },
+                function (data, status) {
+                    data = JSON.parse(data)
+                    data = data["products"]
+                    const productMenu = $("#productMenu")[0]
+                    const footerGallery = $("#footerGallery")[0]
+
+                    for (let index = 0; index < data.length; index++) {
+                        // all produts
+                        const element = data[index];
+                        li = document.createElement("li")
+                        a = document.createElement("a")
+                        a.href = `/product/${element}`
+                        a.innerText = element
+                        li.append(a)
+                        productMenu.append(li)
+
+                        li = document.createElement("li")
+                        li.className = "img-effect2"    
+                        img = document.createElement("img")
+                        img.src = `/static/images/products/${element}/pic1.png`
+                        a = document.createElement("a")
+                        a.href = `/product/${element}`
+                        a.append(img)
+                        li.append(a)
+                        
+                        footerGallery.append(li)
+                    }
+                })
+        }
+
+
         jQuery(document).ready(function () {
             'use strict';
             dz_rev_slider_1();
             $('.lazy').Lazy();
+            allProducts("{%url 'allProducts'%}")
         }); /*ready*/
     </script>
     {% block script %} {% endblock %}
