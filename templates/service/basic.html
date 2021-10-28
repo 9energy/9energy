@@ -80,7 +80,8 @@
                                 <li> <a href="{%url 'about'%}">About Us</a></li>
                                 <li>
                                     <a href="javascript:void(0);">Products<i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu right" style="max-height: 250px; overflow-y: scroll;" id="productMenu">
+                                    <ul class="sub-menu right" style="max-height: 250px; overflow-y: scroll;"
+                                        id="productMenu">
                                     </ul>
                                 </li>
                                 <li> <a href="{%url 'service'%}">Service</a></li>
@@ -131,10 +132,10 @@
                             <div class="widget widget_getintuch">
                                 <h5 class="m-b30 text-white ">Contact us</h5>
                                 <ul>
-                                    <li><a href="{{locationLink}}" target="_blank"><i
-                                                class="ti-location-pin"></i>
-                                            <div>ADDRESS</div> {{locationAddress}} </a></li>
-                                    <li><i class="ti-mobile"></i><strong>Toll-Free No</strong> 1800-11-2454 
+                                    <li><a href="{{locationLink}}" target="_blank"><i class="ti-location-pin"></i>
+                                            <div>ADDRESS</div> {{locationAddress}}
+                                        </a></li>
+                                    <li><i class="ti-mobile"></i><strong>Toll-Free No</strong> 1800-11-2454
                                     </li>
                                     <li><a href="mailto:{{emailReceiver}}"><i class="ti-email"></i>
                                             <div>email</div>{{emailReceiver}}
@@ -157,13 +158,16 @@
             <div class="footer-bottom">
                 <div class="container text-center">
                     <ul class="list-inline m-a0">
-                        <li><a href="{{facebook}}" target="_blank"
-                            class="site-button facebook circle "><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="{{linkedin}}" target="_blank" class="site-button linkedin circle "><i
-                                class="fa fa-linkedin"></i></a></li>
-                    <li><a href="{{twitter}}" target="_blank" class="site-button twitter circle "><i
-                                class="fa fa-twitter"></i></a></li>
-                </ul>
+                        <li><a href="{{facebook}}" target="_blank" class="site-button facebook circle "><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="{{linkedin}}" target="_blank" class="site-button linkedin circle "><i
+                                    class="fa fa-linkedin"></i></a></li>
+                        <li><a href="{{twitter}}" target="_blank" class="site-button twitter circle "><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li><a href="{{youtube}}" target="_blank" class="site-button youtube circle "><i
+                                    class="fa fa-youtube"></i></a></li>
+                    </ul>
+                    </ul>
                 </div>
                 <div class="container text-center mt-3">
                     <span>Copyright © 2022-23 | Created By <a
@@ -242,14 +246,14 @@
                         productMenu.append(li)
 
                         li = document.createElement("li")
-                        li.className = "img-effect2"    
+                        li.className = "img-effect2"
                         img = document.createElement("img")
                         img.src = `/static/images/products/${element}/pic1.png`
                         a = document.createElement("a")
                         a.href = `/product/${element}`
                         a.append(img)
                         li.append(a)
-                        
+
                         footerGallery.append(li)
                     }
                 })

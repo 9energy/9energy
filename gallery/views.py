@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 import json, os
-from energysolar.settings import EMAIL_RECEIVER, LINKEDIN, LOCATION_LINK, LOCATION_ADDRESS, FACEBOOK, TWITTER
+from energysolar.settings import EMAIL_RECEIVER, LINKEDIN, LOCATION_LINK, LOCATION_ADDRESS, FACEBOOK, TWITTER, YOUTUBE
 
 class GalleryRetriever():    
     def __init__(self):
@@ -34,5 +34,6 @@ def home(request):
         "facebook": FACEBOOK,
         "linkedin": LINKEDIN,
         "twitter": TWITTER,
+        "youtube": YOUTUBE
     }
     return render(request, "gallery/home.html", context)

@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from energysolar.settings import EMAIL_RECEIVER, LINKEDIN, LOCATION_ADDRESS, LOCATION_LINK, FACEBOOK, TWITTER
+from energysolar.settings import EMAIL_RECEIVER, LINKEDIN, LOCATION_ADDRESS, LOCATION_LINK, FACEBOOK, TWITTER, YOUTUBE
 import os
 import json
 
@@ -58,6 +58,7 @@ def home(request, productName):
         "facebook": FACEBOOK,
         "twitter": TWITTER,
         "linkedin": LINKEDIN,
+        "youtube": YOUTUBE
     }
     
     return render(request, "product/home.html", context)

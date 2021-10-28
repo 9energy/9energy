@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 import requests
 import json
 import smtplib
-from energysolar.settings import EMAIL_ADDRESS, EMAIL_PASSWORD, EMAIL_RECEIVER, LINKEDIN, LOCATION_ADDRESS, LOCATION_EMBED, LOCATION_LINK, FACEBOOK, TWITTER
+from energysolar.settings import EMAIL_ADDRESS, EMAIL_PASSWORD, EMAIL_RECEIVER, LINKEDIN, LOCATION_ADDRESS, LOCATION_EMBED, LOCATION_LINK, FACEBOOK, TWITTER, YOUTUBE
 
 
 # Create your views here.
@@ -44,5 +44,6 @@ def home(request):
             "facebook": FACEBOOK,
             "linkedin": LINKEDIN,
             "twitter": TWITTER,
+            "youtube": YOUTUBE
         }
         return render(request, "contactus/home.html", context)

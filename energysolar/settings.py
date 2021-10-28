@@ -33,6 +33,7 @@ LOCATION_EMBED = config("location_embed")
 FACEBOOK = config("facebook")
 LINKEDIN = config("linkedin")
 TWITTER = config("twitter")
+YOUTUBE = config("youtube")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
